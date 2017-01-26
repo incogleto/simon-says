@@ -1,0 +1,176 @@
+/* styles */
+/* called by your view template */
+$topOffset: 25px;
+$leftOffset: 25px;
+
+body{
+  font-family: 'Share Tech Mono', monospace;
+  background-image: url("https://cdn.gomix.com/7b834a2d-7aaf-458d-947a-ab4d39e6a433%2Flight_grey_%402X.jpg");
+}
+
+#game{
+  position: absolute;
+  background-color: black;
+  border-radius: 25%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 650px;
+  height: 450px;
+}
+
+#ticker{
+  width: 90%;
+  height: 100px;
+  background-color: grey;
+  border-radius: 10%;
+  border: 10px solid black;
+  position: relative;
+  bottom: 150px;
+  left: 20px;
+}
+
+#tickerText{
+  line-height: 100px;
+  font-size: 6em;
+  width: 100%;
+  text-align: center;
+  color: green;
+}
+
+.color{
+  height: 200px;
+  width: 300px;
+    cursor: pointer;
+}
+
+#green{
+  position: absolute;
+  left: 0px + $leftOffset;
+  top: 0px + $topOffset;
+  background-color: #16894C;
+  border-top-left-radius: 50%;
+}
+
+#yellow{
+  position: absolute;
+  left: 300px + $leftOffset;
+  top: 0px + $topOffset;
+  background-color: #BDA004;
+  border-top-right-radius: 50%;
+}
+
+#red{
+  position: absolute;
+  left: 0px + $leftOffset;
+  top: 200px + $topOffset;
+  background-color: #92301F;
+  border-bottom-left-radius: 50%;
+}
+
+#blue{
+  position: absolute;
+  left: 300px + $leftOffset;
+  top: 200px + $topOffset;
+  background-color: #1C4A96;
+  border-bottom-right-radius: 50%;
+}
+
+#controls{
+  position:relative;
+  top:375px;
+  width: 650px;
+  height: 100px;
+  margin: 0 auto;
+  left: 20px;
+}
+
+#start{
+  width: 100px;
+  height: 100px;
+  background-color: #E4694A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  float: left;
+  border: 10px solid black;
+  font-size: 2em;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#diff{
+  float: left;
+  text-align: center;
+  line-height: 100px;
+  margin-left: 25px;
+}
+
+#switch{
+  height: 100px;
+  width: 200px;
+  float: left;
+  background-color: grey;
+  border-radius: 10%;
+  border: 10px solid black;
+}
+
+#innerSwitch{
+  height: 80px;
+  width: 90px;
+  background-color: #2BCB77;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.hardSwitch{
+  background-color: #E4694A !important;
+  transform: translateX(90px);
+}
+
+#easy{
+  float: left;
+  transform: rotate(-90deg);
+  font-size: 2em;
+  margin: 0 -15px;
+}
+
+#hard{
+  float: left;
+  transform: rotate(-90deg);
+  font-size: 2em;
+  margin: 0 -15px;
+}
+
+#counter{
+  margin-left: 25px;
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+  float: left;
+  text-align: center;
+  border-radius: 10%;
+  border: 10px solid black;
+}
+
+#display{
+  display: block;
+  color: green;
+  line-height: 80px;
+  font-size: 5em;
+}
+
+#scoreText{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
+  width: 100px;
+  top: 5px;
+
+}
